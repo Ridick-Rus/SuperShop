@@ -35,6 +35,7 @@ gem "pundit"
 gem "logidze", "~> 1.1"
 gem "closure_tree"
 gem 'database_validations'
+gem 'haml-rails'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
