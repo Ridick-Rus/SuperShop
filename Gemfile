@@ -29,7 +29,7 @@ gem 'database_validations'
 gem 'haml-rails'
 
 # gem "redis", "~> 4.0"
-
+# sync
 # gem "kredis"
 
 # gem "bcrypt", "~> 3.1.7"
