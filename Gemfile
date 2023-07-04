@@ -20,13 +20,13 @@ gem "stimulus-rails"
 gem "cssbundling-rails"
 
 gem "jbuilder"
-#gem 'activeadmin'
+# gem 'activeadmin'
 gem "devise"
 gem "pundit"
 gem "logidze", "~> 1.1"
 gem "closure_tree"
-gem 'database_validations'
-gem 'haml-rails'
+gem "database_validations"
+gem "haml-rails"
 
 # gem "redis", "~> 4.0"
 # sync
@@ -34,7 +34,7 @@ gem 'haml-rails'
 
 # gem "bcrypt", "~> 3.1.7"
 
-#gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+# gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 gem "bootsnap", require: false
 
@@ -44,7 +44,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "debug", platforms: %i[mri mingw x64_mingw]
   gem "web-console"
   gem "rspec-rails"
   gem "factory_bot_rails"
