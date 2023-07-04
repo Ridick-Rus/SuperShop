@@ -1,0 +1,16 @@
+pre-push:
+  commands:
+    brakeman:
+      tags: backend security
+      run: bundle exec brakeman --no-pager
+    db-consistency:
+      tags: db check
+      run: bundle exec database_consistency
+
+pre-commit:
+  files: git diff --cached --name-only
+  commands:
+    standardrb:
+      exclude: "lefthook.yml"
+      tags: backend style
+      run: bundle exec standardrb --fix {files} --force-exclusion {staged_files}

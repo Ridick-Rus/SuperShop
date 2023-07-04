@@ -1,0 +1,46 @@
+require:
+  - rubocop-rspec
+  - rubocop-rails
+  - rubocop-rake
+  - database_validations/rubocop/cops
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/MultipleExpectations:
+  Max: 5
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 10
+
+RSpec/ExampleLength:
+  Max: 20
+
+RSpec/FilePath:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/ContextWording:
+  Prefixes:
+    - when
+    - with
+    - without
+    - if
+    - unless
+    - for
+    - but
+    - and
+
+Rails/FilePath:
+  Enabled: false
+
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - production
+
+RSpec/VoidExpect:
+  Enabled: false
