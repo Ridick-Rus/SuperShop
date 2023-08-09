@@ -25,7 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_09_061210) do
 
   create_table "storages", force: :cascade do |t|
     t.integer "amount", default: 0, null: false
-    t.bigint "product_id"
+    t.bigint "product_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["product_id"], name: "index_storages_on_product_id", unique: true
