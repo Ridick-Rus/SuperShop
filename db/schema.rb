@@ -25,10 +25,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_09_061210) do
 
   create_table "storages", force: :cascade do |t|
     t.integer "amount", default: 0, null: false
-    t.bigint "products_id"
+    t.bigint "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["products_id"], name: "index_storages_on_products_id"
+    t.index ["product_id"], name: "index_storages_on_product_id", unique: true
     t.check_constraint "amount >= 0", name: "amount_check"
   end
 
@@ -44,5 +44,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_09_061210) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "storages", "products", column: "products_id"
+  add_foreign_key "storages", "products"
 end
