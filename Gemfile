@@ -45,7 +45,6 @@ gem "bootsnap", require: false
 group :development, :test do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "debug", platforms: %i[mri mingw x64_mingw]
-  gem "web-console"
   gem "rspec-rails"
   gem "factory_bot_rails"
   gem "shoulda-matchers"
@@ -66,4 +65,5 @@ end
 group :development do
   gem "database_consistency", require: false
   gem "brakeman"
+  gem "web-console"
 end
