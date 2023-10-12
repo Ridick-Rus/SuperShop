@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe User, type: :model do
   describe "validations" do
-    subject { FactoryBot.build(:user, email: valid_email, password: valid_password) }
+    subject { build(:user, email: valid_email, password: valid_password) }
 
     let(:valid_email) { "test@test.ru" }
     let(:invalid_email) { "test@test" }
