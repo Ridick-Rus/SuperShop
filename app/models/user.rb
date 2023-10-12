@@ -4,8 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :validatable
   validates :email, uniqueness: true, presence: true
-  validates :encrypted_password, presence: true
+  validates :encrypted_password, :name, presence: true
   validates :reset_password_token, uniqueness: {where: "(reset_password_token IS NOT NULL)"}
+  validates :name, length: {maximum: 40}
 
   validates :email, format: {with: URI::MailTo::RFC5322}
 
