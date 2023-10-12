@@ -9,5 +9,9 @@ FactoryBot.define do
     sequence :password do |n|
       "Aa123456#{n}"
     end
+
+    sequence :name do |n|
+      "User-#{n}"
+    end
   end
 end
